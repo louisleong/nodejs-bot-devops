@@ -35,7 +35,7 @@ bot.dialog('/', [
     function (session, results) {
         //We've gotten the user's information and can now give a response based on that data
         session.userData.profile = results.response;
-        session.send('Hello %(name)s! I love %(company)s!', session.userData.profile);
+        session.send('Hello %(name)s!! I love %(company)s!!', session.userData.profile);
     }
 ]);
 
