@@ -44,7 +44,7 @@ bot.dialog('/ensureProfile', [
         session.dialogData.profile = args || {};
         //Checks whether or not we already have the user's name
         if (!session.dialogData.profile.name) {
-            builder.Prompts.text(session, "What's your name?");
+            builder.Prompts.text(session, "What is your name?");
         } else {
             next();
         }
